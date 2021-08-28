@@ -4,12 +4,20 @@
 
 - **Alejandro Ortiz Mejía**
 
-## **Introducción** 
+## **Planteamiento del Problema** 
 
 El RUNT significa Registro Único Nacional de Tránsito, y funciona como una gran base de datos centralizada que contiene información sobre todos los vehículos en el país [1].
-Diariamente las personas acuden ante la entidad del tránsito para registrar su vehículo, así que se tienen registros del número de vehículos registrados por cada día del año; este es nuestro caso, y contamos con los registros del periodo que va desde el 1 de enero del 2012 hasta el 31 de diciembre de 2017; es decir, 2192 días en total.
+Diariamente las personas acuden ante la entidad del tránsito para registrar su vehículo, así que se tienen registros del número de vehículos registrados por cada día del año; este es nuestro caso.
 
-Una serie de tiempo son datos estadísticos que se recopilan, observan o registran en intervalos de tiempo regulares (diario, semanal, semestral, anual, entre otros) [2].
+Una serie de tiempo son datos estadísticos que se recopilan, observan o registran en intervalos de tiempo regulares (diario, semanal, semestral, anual, entre otros) [2]. A partir de esta definición, podemos decir que nuestro conjunto de datos es una serie de timepo.
+
+### Descripción del conjunto de datos
+
+El conjunto de datos contiene 2192 registros de la cantidad de vehículos registrados ante el RUNT diariamente, este conjunto tiene dos variables:
+
+- Fecha: la fecha está en formato Día/Mes/Año, y contiene las fechas desde 1 de enero de 2012 hasta el 31 de diciembre de 2017 sin ningún dato faltante; es decir, 2192 días en total.
+
+- Unidades: Es la cantidad de vehículos registrados en el correspondiente día.
 
 ## Referencias
 
