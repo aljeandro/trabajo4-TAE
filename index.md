@@ -1,4 +1,4 @@
-## Trabajo 4 Técnicas en Aprendizaje Estadístico
+# Trabajo 4 Técnicas en Aprendizaje Estadístico
 
 # **Integrantes**
 
