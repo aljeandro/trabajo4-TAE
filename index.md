@@ -35,9 +35,10 @@ Con el fin de tener un mejor entendimiento de cómo es el comportamiento de esta
 ![image](/images/figura2.png)
 Figura 2.  Comportamiento de la variable Unidades en el tiempo de manera mensual.
 
-De acuerdo con James, Witten, Hastie y Tibshirani [3], en una serie de tiempo no se puede suponer que las observaciones son independientes entre sí, más aún, los valores cercanos en el tiempo tienden a tener una autocorrelación similar entre sí. Para ser claros, se puede considerar los pares de observaciones (Ut, Ut-l), un retraso de l días (o meses). Si tomamos todos esos pares en la serie de Ut y calculamos su coeficiente de correlación, esto da la autocorrelación en el rezago l (también llamado lag l). La figura 3 muestra la función de autocorrelación para todos los rezagos (en días) hasta 31.
+De acuerdo con James, Witten, Hastie y Tibshirani [3, p.427], en una serie de tiempo no se puede suponer que las observaciones son independientes entre sí, más aún, los valores cercanos en el tiempo tienden a tener una autocorrelación similar entre sí. Para ser claros, se puede considerar los pares de observaciones (Ut, Ut-l), un retraso de l días (o meses). Si tomamos todos esos pares en la serie de Ut y calculamos su coeficiente de correlación, esto da la autocorrelación en el rezago l (también llamado lag l). La figura 3 muestra la función de autocorrelación para todos los rezagos (en días) hasta 31.
 
 ![image](/images/figura3.png)
+
 Figura 3. Función de autocorrelación donde el eje x representa el número de días de retraso (lags), y el eje y, el coeficiente de correlación. 
 
 ## Referencias
@@ -46,7 +47,7 @@ Figura 3. Función de autocorrelación donde el eje x representa el número de d
 
 [2] Departamento de Matemáticas. http://www.estadistica.mat.uson.mx/Material/seriesdetiempo.pdf (accedido el 28 de agosto de 2021).
 
-[4] G. James, D. Witten, T. Hastie y R. Tibshirani, *An Introduction to Statistical Learning With Applications in R*, 2a ed. New York, NY: Springer, 2021.
+[3] G. James, D. Witten, T. Hastie y R. Tibshirani, *An Introduction to Statistical Learning With Applications in R*, 2a ed. New York, NY: Springer, 2021.
 
 
 
