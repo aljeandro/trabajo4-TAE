@@ -4,6 +4,8 @@
 
 - **Alejandro Ortiz Mejía**
 
+**Nota**: Puede hacer zoom a este blog para visualizar mejor las imágenes.
+
 ## **Planteamiento del Problema** 
 
 El RUNT significa Registro Único Nacional de Tránsito, y funciona como una gran base de datos centralizada que contiene información sobre todos los vehículos en el país [1].
@@ -31,7 +33,8 @@ Figura 1. Comportamiento de la variable Unidades en el tiempo.
 Con el fin de tener un mejor entendimiento de cómo es el comportamiento de esta serie de tiempo, en la figura 2 se observa el comportamiento mensual de las unidades de vehículos registrados; esta vista nos permite entender de una mejor manera este comportamiento al reducir el ruido que introduce la alta variación de la inscripción de vehículos diaria de la figura 1. Acá se evidencia mejor los picos producidos al final de cada año.
 
 
-
+![image](/images/figura2.png)
+Figura 2.  Comportamiento de la variable Unidades en el tiempo de manera mensual.
 
 ## Referencias
 
