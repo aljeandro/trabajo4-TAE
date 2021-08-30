@@ -25,6 +25,11 @@ El conjunto de datos contiene 2192 registros de la cantidad de vehículos regist
 
 En la figura 1 se puede observar el comportamiento de la variable en el tiempo. En primera instancia, se puede notar que año tras año hay muchos picos, y en partícular, hay un gran pico que se produce siempre a final de año, a este fenómeno se le conoce como *variación estacional*; es decir, se produce cuando en una serie de tiempo ocurren variaciones o movimientos que recurren año tras año en los mismos meses (o en los mismos trimestres) del año poco más o menos con la misma intensidad.
 
+![image](/images/figura1.jpg)
+Figura 1. Comportamiento de la variable Unidades en el tiempo.
+
+Con el fin de tener un mejor entendimiento de cómo es el comportamiento de esta serie de tiempo, en la figura 2 se observa el comportamiento mensual de las unidades de vehículos registrados; esta vista nos permite entender de una mejor manera este comportamiento al reducir el ruido que introduce la alta variación de la inscripción de vehículos diaria de la figura 1. Acá se evidencia mejor los picos producidos al final de cada año.
+
 
 
 
