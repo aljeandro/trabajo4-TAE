@@ -11,9 +11,9 @@
 El RUNT significa Registro Único Nacional de Tránsito, y funciona como una gran base de datos centralizada que contiene información sobre todos los vehículos en el país [1].
 Diariamente las personas acuden ante la entidad del tránsito para registrar su vehículo, así que se tienen registros del número de vehículos registrados por cada día del año; este es nuestro caso.
 
-Predecir el número de vehículos que serán registrados en el futuro tomando como base los que se han registrado en el pasado podría ser de gran interés para las autoridades de mobilidad en el país, ya que esto les permitiría entender las dinámicas de las futuras situaciones en ámbitos como la congestión vehicular o la contaminación del aire, con lo cual pueden anticiparse y tomar decisiones que permitan prevenir situaciones que lleven a las ciudades al colapso.
+Predecir el número de vehículos que serán registrados en el futuro tomando como base los que se han registrado en el pasado podría ser de gran interés para las autoridades de mobilidad en el país, ya que esto les permitiría entender las dinámicas de las futuras situaciones en ámbitos como la congestión vehicular o la contaminación del aire, con lo cual pueden anticiparse y tomar decisiones o planear estrategias que permitan prevenir situaciones que lleven a las ciudades al colapso.
 
-Una **serie de tiempo** son datos estadísticos que se recopilan, observan o registran en intervalos de tiempo regulares (diario, semanal, semestral, anual, entre otros) [2]. A partir de esta definición podemos decir que nuestro conjunto de datos es una serie de timepo.
+Una **serie de tiempo** son datos estadísticos que se recopilan, observan o registran en intervalos de tiempo regulares (diario, semanal, semestral, anual, entre otros) [2]. A partir de esta definición podemos decir que nuestro conjunto de datos es una serie de tiempo.
 
 ### **Descripción del conjunto de datos**
 
@@ -122,6 +122,16 @@ Al realizar una inspección visual, podemos notar que históricamente, se presen
 ![image](/images/figura12.png)
 
 **Figura 12**. Tendencia lineal a la baja del conjunto de datos y predicción.
+
+### Predicción del periodo 2012 hasta 2016
+
+Dada la naturaleza del funcionamiento del modelo (explicada previamente), para predecir el periodo 2012 - 2016 no podemos usar directamente el mismo modelo usado para predecir el primer semestre de 2018, por ejemplo; por tanto, se procedió siguiendo los siguientes pasos:
+
+- **Paso 1**: Primero, se predice el año 2016 entrenando el modelo con los datos desde el 2012 hasta el 2015
+- **Paso 2**: Se predice el año 2015 entrenando el modelo con los datos desde el 2012 hasta el 2014.
+- **Paso 3**: Se predice el año 2014 entrenando el modelo con los datos desde el 2012 hasta el 2013.
+- **Paso 4**: Bajo la premisa de que se necesitan datos del pasado para predecir el futuro, para la predicción del periodo que va desde el segundo trimestre del 2012 hasta el final del 2013, se utilizaron los datos del primer trimestre del 2012. Se tomaron 3 meses como entrenamiento debido a que cada 3 meses se presenta una relativa alta correlación (ver figura 4), y porque de ser menos tiempo (por ejemplo 27 días, por su alta autocorrelación), el modelo no sería capaz de capturar y predecir bien el comportamiento de la serie.
+- **Paso 5**: Para la predicción del primer semestre de 2012 se replican las predicciones hechas para el primer trimestre del año 2013, debido a la relativa alta autocorrelación que se presenta cada 12 meses.
 
 ## **Referencias**
 
