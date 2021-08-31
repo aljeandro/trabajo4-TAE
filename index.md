@@ -11,7 +11,7 @@
 El RUNT significa Registro Único Nacional de Tránsito, y funciona como una gran base de datos centralizada que contiene información sobre todos los vehículos en el país [1].
 Diariamente las personas acuden ante la entidad del tránsito para registrar su vehículo, así que se tienen registros del número de vehículos registrados por cada día del año; este es nuestro caso.
 
-Predecir el número de vehículos que serán registrados en el futuro tomando como base los que se han registrado en el pasado podría ser de gran interés para las autoridades de mobilidad en el país, ya que esto les permitiría entender las dinámicas de las futuras situaciones en ámbitos como la congestión vehicular o la contaminación del aire, con lo cual pueden anticiparse y tomar decisiones o planear estrategias que permitan prevenir situaciones que lleven a las ciudades al colapso.
+Predecir el número de vehículos que serán registrados en el futuro tomando como base los que se han registrado en el pasado podría ser de gran interés para las autoridades de movilidad en el país, ya que esto les permitiría entender las dinámicas de las futuras situaciones en ámbitos como la congestión vehicular o la contaminación del aire, con lo cual pueden anticiparse y tomar decisiones o planear estrategias que permitan prevenir situaciones que lleven a las ciudades al colapso.
 
 Una **serie de tiempo** son datos estadísticos que se recopilan, observan o registran en intervalos de tiempo regulares (diario, semanal, semestral, anual, entre otros) [2]. A partir de esta definición podemos decir que nuestro conjunto de datos es una serie de tiempo.
 
@@ -139,6 +139,12 @@ Dada la naturaleza del funcionamiento del modelo (explicada previamente), para p
 
 - **R-cuadrado**: Para esta métrica se obtuvo un valor de **40 %**, esto quiere decir que el 40 % de la variabilidad en los datos es explicada por la relación entre el tiempo y las unidades de vehículos.
 
+## **Conclusiones**
+
+La predicción de series de tiempo es una de las mayores aplicaciones en el área del aprendizaje supervisado, ya que permite anticiparse al futuro generando nuevas estrategias. 
+
+Durante este informe se presentó una serie de tiempo univariada, donde la variable predictora era el tiempo, y la variable respuesta era las unidades de vehículos inscritos en el RUNT para el correspondiente día; los datos históricos de esta serie permitieron entrenar y ajustar un modelo para predecir diferentes periodos. De estas predicciones, se mostró que era posible alcanzar coeficientes de determinación (R-cuadrado) entre 40 % y 53 % que, aunque no es muy alto, es aceptable debido a que, como los datos fueron tomados a diario, existe mucho ruido en los datos, es decir, una alta variabilidad, lo cual dificulta el desempeño del modelo; además, las variaciones aleatorias del modelo también pudieron haber afecta la precisión de este. El alto ruido presentado por la serie podría haber sido mitigado con métodos de suavisado como, por ejemplo, el promedio móvil o el suavizamiento exponencial. Por otro lado, este modelo podría haber tenido mejor desempeño si se hubiese aplicado diferentes análisis como, por ejemplo, la estimación de tendencia (de manera formal, porque en realidad sí se propuso, ver figura 12), estimación de las variaciones cíclicas irregulares, entre otros [7]. Sin embargo, estos no fueron aplicados a este proyecto por simplicidad.
+
 ## **Referencias**
 
 [1] "Qué es y cómo funciona el RUNT". Inicio - Programa Servicios de Transito. https://serviciosdetransito.com/index.php/noticias/139-que-es-y-como-funciona-el-runt (accedido el 28 de agosto de 2021).
@@ -153,6 +159,7 @@ Dada la naturaleza del funcionamiento del modelo (explicada previamente), para p
 
 [6] "Introduction to darts". GitHub. https://github.com/unit8co/darts/blob/master/examples/01-darts-intro.ipynb (accedido el 31 de agosto de 2021).
 
+[7] Colaboradores de los proyectos Wikimedia. "Serie temporal - Wikipedia, la enciclopedia libre". Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Serie_temporal#Tipos_de_series_temporales (accedido el 31 de agosto de 2021).
 
 
 
