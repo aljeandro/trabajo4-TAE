@@ -19,9 +19,9 @@ Una **serie de tiempo** son datos estadísticos que se recopilan, observan o reg
 
 El conjunto de datos contiene 2192 registros de la cantidad de vehículos registrados ante el RUNT diariamente registrados cronológicamente, este conjunto tiene dos variables:
 
-- Fecha: la fecha está en formato Día/Mes/Año, y contiene las fechas desde 1 de enero de 2012 hasta el 31 de diciembre de 2017 sin ningún dato faltante; es decir, 2192 días en total.
+- Fecha (variable predictora): la fecha está en formato Día/Mes/Año, y contiene las fechas desde 1 de enero de 2012 hasta el 31 de diciembre de 2017 sin ningún dato faltante; es decir, 2192 días en total.
 
-- Unidades: Es la cantidad de vehículos registrados en el correspondiente día.
+- Unidades (variable respuesta): Es la cantidad de vehículos registrados en el correspondiente día.
 
 **¿Cómo se ve el conjunto de datos?**
 
@@ -97,7 +97,7 @@ Para ver mejor el funcionamiento del modelo, en la figura 8 se puede observar la
 
 Para evaluar la predicción del modelo, se utilizaron las siguientes métricas:
 
-- **RMSE**: el RMSE se calcula de acuerdo a la figura 9. Para esta métrica se obtuvo un valor de aproximadamente **361**, esto quiere decir que en promedio las predicciones se alejaban del dato original en 361 unidades.
+- **RMSE**: el RMSE se calcula de acuerdo a la figura 9. Para esta métrica se obtuvo un valor de aproximadamente **361**, esto quiere decir que en promedio las predicciones se alejan del dato real en 361 unidades.
 
 ![image](/images/figura9.png)
 
@@ -133,6 +133,12 @@ Dada la naturaleza del funcionamiento del modelo (explicada previamente), para p
 - **Paso 4**: Bajo la premisa de que se necesitan datos del pasado para predecir el futuro, para la predicción del periodo que va desde el segundo trimestre del 2012 hasta el final del 2013, se utilizaron los datos del primer trimestre del 2012. Se tomaron 3 meses como entrenamiento debido a que cada 3 meses se presenta una relativa alta correlación (ver figura 4), y porque de ser menos tiempo (por ejemplo 27 días, por su alta autocorrelación), el modelo no sería capaz de capturar y predecir bien el comportamiento de la serie.
 - **Paso 5**: Para la predicción del primer semestre de 2012 se replican las predicciones hechas para el primer trimestre del año 2013, debido a la relativa alta autocorrelación que se presenta cada 12 meses.
 
+**Métricas**
+
+- **RMSE**: Para esta métrica se obtuvo un valor de aproximadamente **429**, esto quiere decir que en promedio las predicciones se alejan del dato real en 429 unidades.
+
+- **R-cuadrado**: Para esta métrica se obtuvo un valor de **40 %**, esto quiere decir que el 40 % de la variabilidad en los datos es explicada por la relación entre el tiempo y las unidades de vehículos.
+
 ## **Referencias**
 
 [1] "Qué es y cómo funciona el RUNT". Inicio - Programa Servicios de Transito. https://serviciosdetransito.com/index.php/noticias/139-que-es-y-como-funciona-el-runt (accedido el 28 de agosto de 2021).
@@ -144,6 +150,8 @@ Dada la naturaleza del funcionamiento del modelo (explicada previamente), para p
 [4] Colaboradores de los proyectos Wikimedia. "Análisis de la regresión - Wikipedia, la enciclopedia libre". Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Análisis_de_la_regresión (accedido el 31 de agosto de 2021).
 
 [5] T. Hastie, R. Tibshirani y J. Friedman, *The Elements of Statistical Learning Data Mining, Inference, and Prediction*, 2a ed. New York: Springer, 2001.
+
+[6] "Introduction to darts". GitHub. https://github.com/unit8co/darts/blob/master/examples/01-darts-intro.ipynb (accedido el 31 de agosto de 2021).
 
 
 
