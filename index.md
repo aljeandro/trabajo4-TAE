@@ -95,7 +95,7 @@ Para ver mejor el funcionamiento del modelo, en la figura 8 se puede observar la
 
 **Figura 8**. Predicción del año 2017 desde una perspectiva mensual. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
 
-**Métricas**
+**Métricas para todo el 2017**
 
 Para evaluar la predicción del modelo, se utilizaron las siguientes métricas:
 
@@ -110,6 +110,12 @@ Para evaluar la predicción del modelo, se utilizaron las siguientes métricas:
 ![image](/images/figura10.png)
 
 **Figura 10**. Fórmula para calcular el coeficiente de determinación (R cuadrado).
+
+**Métricas para el primer semestre de 2017**
+
+- **RMSE**: Para esta métrica se obtuvo un valor de aproximadamente **344**.
+
+- **R-cuadrado**: Para esta métrica se obtuvo un valor de **49 %**.
 
 ### Predicción del primer semestre de 2018
 
