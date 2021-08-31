@@ -53,6 +53,17 @@ Para la predicción de valores futuros de una serie de tiempo existen muchos pos
 
 Como ya se ha mencionado, en una serie de tiempo la variable respuesta (en este caso Unidades) depende del tiempo, por tal motivo, una técnica netamente de regresión podría ser insuficiente, ya que no se estaría capturando completamente dicha dependencia para las predicciones futuras. Más especificamente, un modelo netamente de regresión produce una estimación de la variable respuesta (Unidades) dada la variable predictora (fecha) **actual** [4]; sin embargo, si adicionalmente se toman los últimos l valores de la serie (lags) para predecir el siguiente valor podría resultar en un modelo con mejor desempeño, ya que permite que el modelo varíe según la historia a corto plazo de la serie.
 
+Este proyecto fue desarrollado en Python usando la librería especializada en predicción de series de tiempo llamada Darts. Aunque la librería no especifica en su documentación qué técnica de predicción está utilizando, se **presume** que esta es la técnica de **Predicción autorregresiva recursiva de varios pasos**. 
+
+**¿Qué es la Predicción Autorregresiva Recursiva de Varios Pasos?**
+
+Esta técnica consiste en utilizar el modelo que predice un solo paso a la vez, varias veces de manera recursiva; las figuras 5 y 6 detallan este procedimiento.
+
+![image](/images/figura5.png)
+Figura 5. Fórmula del proceso recursivo autorregresivo de la predicción.
+
+![image](/images/figura6.gif)
+Figura 6. Animación del proceso recursivo de predicción. Tomado de: https://www.cienciadedatos.net/documentos/py27-forecasting-series-temporales-python-scikitlearn.html
 
 ## **Referencias**
 
