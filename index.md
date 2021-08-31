@@ -28,24 +28,24 @@ El conjunto de datos contiene 2192 registros de la cantidad de vehículos regist
 En la figura 1 se puede observar el comportamiento de la variable en el tiempo. En primera instancia, se puede notar que año tras año hay muchos picos, y en partícular, hay un gran pico que se produce siempre a final de año, a este fenómeno se le conoce como *variación estacional*; es decir, se produce cuando en una serie de tiempo ocurren variaciones o movimientos que recurren año tras año en los mismos meses (o en los mismos trimestres) del año poco más o menos con la misma intensidad.
 
 ![image](/images/figura1.png)
-Figura 1. Comportamiento de la variable Unidades en el tiempo.
+**Figura 1**. Comportamiento de la variable Unidades en el tiempo.
 
 Con el fin de tener un mejor entendimiento de cómo es el comportamiento de esta serie de tiempo, en la figura 2 se observa el comportamiento mensual de las unidades de vehículos registrados; esta vista nos permite entender de una mejor manera este comportamiento al reducir el ruido que introduce la alta variación de la inscripción de vehículos diaria de la figura 1. Acá se evidencia mejor los picos producidos al final de cada año.
 
 ![image](/images/figura2.png)
-Figura 2.  Comportamiento de la variable Unidades en el tiempo de manera mensual.
+**Figura 2**.  Comportamiento de la variable Unidades en el tiempo de manera mensual.
 
 De acuerdo con James, Witten, Hastie y Tibshirani [3, p.427], en una serie de tiempo no se puede suponer que las observaciones son independientes entre sí, más aún, los valores cercanos en el tiempo tienden a tener una autocorrelación similar entre sí. Para ser claros, se puede considerar los pares de observaciones (Ut, Ut-l), un retraso de l días (o meses). Si tomamos todos esos pares en la serie de Ut y calculamos su coeficiente de correlación, esto da la autocorrelación en el rezago l (también llamado lag l). La figura 3 muestra la función de autocorrelación para todos los rezagos (en días) hasta 31. A partir de esta, se observa una correlación considerable con 27, 21, 14, 7, 1 días de retraso, esto nos sugiere que para cada una de estas cantidades de días existe una tendencia estacional, siendo la más fuerte la de 27 días; es decir, cada 27 días la cantidad de vehículos inscritos en el RUNT tiene una intensidad relativamente similar.
 
 ![image](/images/figura3.png)
 
-Figura 3. Función de autocorrelación donde el eje x representa el número de días de retraso (lags), y el eje *y*, el coeficiente de correlación; los picos corresponden a los días 1, 7, 14, 21 y 27, respectivamente.
+**Figura 3**. Función de autocorrelación donde el eje x representa el número de días de retraso (lags), y el eje *y*, el coeficiente de correlación; los picos corresponden a los días 1, 7, 14, 21 y 27, respectivamente.
 
 El anterior ejercicio también puede ser llevado a cabo tomando las unidades de vehículos inscritas de manera mensual; la figura 4 muestra la función de autocorrelación si se toma este enfoque. En esta se puede observar una clara tendencia estacional anual (línea fucsia), lo cual ratifica lo observado en la figura 2. En otras palabras, cada 12 meses la cantidad de vehículos inscritos en el RUNT tiene una intensidad relativamente similar, y este comportamiento se hace más evidente en el mes de diciembre.
 
 
 ![image](/images/figura4.png)
-Figura 4. Función de autocorrelación donde el eje x representa el número de meses de retraso (lags), y el eje *y*, el coeficiente de correlación; el pico en fucsia representa el coeficiente de correlación para un retraso de 12 meses.
+**Figura 4**. Función de autocorrelación donde el eje x representa el número de meses de retraso (lags), y el eje *y*, el coeficiente de correlación; el pico en fucsia representa el coeficiente de correlación para un retraso de 12 meses.
 
 ## **Modelo de predicción**
 
@@ -61,12 +61,12 @@ Esta técnica consiste en utilizar el modelo que predice un solo paso a la vez, 
 
 
 ![image](/images/figura5.png)
-Figura 5. Fórmula del proceso recursivo autorregresivo de la predicción.
+**Figura 5**. Fórmula del proceso recursivo autorregresivo de la predicción.
 
 
 ![image](/images/figura6.gif)
 
-Figura 6. Animación del proceso recursivo de predicción. Tomado de: https://www.cienciadedatos.net/documentos/py27-forecasting-series-temporales-python-scikitlearn.html
+**Figura 6**. Animación del proceso recursivo de predicción. Tomado de: https://www.cienciadedatos.net/documentos/py27-forecasting-series-temporales-python-scikitlearn.html
 
 ## **Resultados**
 
@@ -85,13 +85,13 @@ A continuación, se presentan los resultados obtenidos al predecir el año 2017.
 
 ![image](/images/figura7.png)
 
-Figura 7. Predicción del año 2017. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
+**Figura 7**. Predicción del año 2017. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
 
 Para ver mejor el funcionamiento del modelo, en la figura 8 se puede observar la predicción desde una perspectiva mensual. A partir de esta, se observa que el modelo subestima los primeros 6 meses del año, y sobreestima los siguientes 6, aunque sin alejarse excesivamente de los datos originales.
 
 ![image](/images/figura8.png)
 
-Figura 8. Predicción del año 2017 desde una perspectiva mensual. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
+**Figura 8**. Predicción del año 2017 desde una perspectiva mensual. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
 
 **Métricas**
 
@@ -100,7 +100,7 @@ Para evaluar la predicción del modelo, se utilizaron las siguientes métricas:
 - **RMSE**: el RMSE se calcula de acuerdo a la figura 9. Para esta métrica se obtuvo un valor de aproximadamente **361**, esto quiere decir que en promedio las predicciones se alejaban del dato original en 361 unidades.
 
 ![image](/images/figura9.png)
-Figura 9. Fórmula para calcular la raíz del error cuadrático medio (RMSE)
+**Figura 9**. Fórmula para calcular la raíz del error cuadrático medio (RMSE)
 
 - **R-cuadrado**: 
 
