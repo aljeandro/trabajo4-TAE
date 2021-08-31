@@ -51,19 +51,26 @@ Figura 4. Función de autocorrelación donde el eje x representa el número de m
 
 Para la predicción de valores futuros de una serie de tiempo existen muchos posibles modelos como, por ejemplo, la transformada rápida de Fourier, regresiones lineales, suavisado exponencial, método Theta, redes neuronales convolucionales temporales, redes neuronales recurrentes, bosques aleatorios, entre otros. Para la realización de este proyecto se probaron varios de estos modelos, y se encontró que las redes neuronales convolucionales temporales y los bosques aleatorios presentaban un relativo buen desempeño. No obstante, dado que para cada tipo de modelo puede existir diferentes hiperparámetros, es necesario, por lo menos, conocer el funcionamiento del modelo y el significado de estos, de lo contrario, el proceso de *tuning* (encontrar la mejor combinación de hiperparámetros posible) podría convertirse en una tarea a "ciegas" y, en consecuencia, ineficiente; este es mi caso, por lo cual, prioricé aquellos modelos con los cuales ya estuviera familiarizado, y que a su vez, tuviera un buen desempeño, lo que finalmente me llevó a escoger el modelo de bosques aleatorios. En conclusión, es posible que el modelo propuesto a continuación no sea el más idóneo para lograr el objetivo establecido, sin embargo, puede ser una buena aproximación.
 
-Como ya se ha mencionado, en una serie de tiempo la variable respuesta (en este caso Unidades) depende del tiempo, por tal motivo, una técnica netamente de regresión podría ser insuficiente, ya que no se estaría capturando completamente dicha dependencia para las predicciones futuras. Más especificamente, un modelo netamente de regresión produce una estimación de la variable respuesta (Unidades) dada la variable predictora (fecha) **actual** [4]; sin embargo, si adicionalmente se toman los últimos l valores de la serie (lags) para predecir el siguiente valor podría resultar en un modelo con mejor desempeño, ya que permite que el modelo varíe según la historia a corto plazo de la serie.
+Como ya se ha mencionado, en una serie de tiempo la variable respuesta (en este caso Unidades) depende del tiempo, por tal motivo, una técnica netamente de regresión podría ser insuficiente, ya que no se estaría capturando completamente dicha dependencia para las predicciones futuras. Más específicamente, un modelo netamente de regresión produce una estimación de la variable respuesta (Unidades) dada la variable predictora (fecha) **actual** [4]; sin embargo, si adicionalmente se toman los últimos l valores de la serie (lags) para predecir el siguiente valor podría resultar en un modelo con mejor desempeño, ya que permite que el modelo varíe según la historia a corto plazo de la serie [5, p.206].
 
 Este proyecto fue desarrollado en Python usando la librería especializada en predicción de series de tiempo llamada Darts. Aunque la librería no especifica en su documentación qué técnica de predicción está utilizando, se **presume** que esta es la técnica de **Predicción autorregresiva recursiva de varios pasos**. 
 
 **¿Qué es la Predicción Autorregresiva Recursiva de Varios Pasos?**
 
-Esta técnica consiste en utilizar el modelo que predice un solo paso a la vez, varias veces de manera recursiva; las figuras 5 y 6 detallan este procedimiento.
+Esta técnica consiste en utilizar el modelo que predice un solo paso a la vez, varias veces de manera recursiva; por otro lado, el término autorregresivo hace referencia a cuando un modelo utiliza valores anteriores (lags) para predecir valores futuros. Las figuras 5 y 6 detallan este procedimiento.
+
 
 ![image](/images/figura5.png)
 Figura 5. Fórmula del proceso recursivo autorregresivo de la predicción.
 
+
 ![image](/images/figura6.gif)
+
 Figura 6. Animación del proceso recursivo de predicción. Tomado de: https://www.cienciadedatos.net/documentos/py27-forecasting-series-temporales-python-scikitlearn.html
+
+### Predicción del año 2017
+
+
 
 ## **Referencias**
 
@@ -74,6 +81,8 @@ Figura 6. Animación del proceso recursivo de predicción. Tomado de: https://ww
 [3] G. James, D. Witten, T. Hastie y R. Tibshirani, *An Introduction to Statistical Learning With Applications in R*, 2a ed. New York, NY: Springer, 2021.
 
 [4] Colaboradores de los proyectos Wikimedia. "Análisis de la regresión - Wikipedia, la enciclopedia libre". Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Análisis_de_la_regresión (accedido el 31 de agosto de 2021).
+
+[5] T. Hastie, R. Tibshirani y J. Friedman, *The Elements of Statistical Learning Data Mining, Inference, and Prediction*, 2a ed. New York: Springer, 2001.
 
 
 
