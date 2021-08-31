@@ -100,6 +100,7 @@ Para evaluar la predicción del modelo, se utilizaron las siguientes métricas:
 - **RMSE**: el RMSE se calcula de acuerdo a la figura 9. Para esta métrica se obtuvo un valor de aproximadamente **361**, esto quiere decir que en promedio las predicciones se alejaban del dato original en 361 unidades.
 
 ![image](/images/figura9.png)
+
 **Figura 9**. Fórmula para calcular la raíz del error cuadrático medio (RMSE)
 
 - **R-cuadrado**: 
