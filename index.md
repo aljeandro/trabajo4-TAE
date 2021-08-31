@@ -15,6 +15,8 @@ Predecir el número de vehículos que serán registrados en el futuro tomando co
 
 Una **serie de tiempo** son datos estadísticos que se recopilan, observan o registran en intervalos de tiempo regulares (diario, semanal, semestral, anual, entre otros) [2]. A partir de esta definición podemos decir que nuestro conjunto de datos es una serie de tiempo.
 
+**Objetivo**: Crear un modelo de inteligencia artificial supervisado que permita predecir el número de unidades de vehículos que serán inscritos en el RUNT en diferentes periodos de tiempo.
+
 ### **Descripción del conjunto de datos**
 
 El conjunto de datos contiene 2192 registros de la cantidad de vehículos registrados ante el RUNT diariamente registrados cronológicamente, este conjunto tiene dos variables:
@@ -22,8 +24,6 @@ El conjunto de datos contiene 2192 registros de la cantidad de vehículos regist
 - Fecha (variable predictora): la fecha está en formato Día/Mes/Año, y contiene las fechas desde 1 de enero de 2012 hasta el 31 de diciembre de 2017 sin ningún dato faltante; es decir, 2192 días en total.
 
 - Unidades (variable respuesta): Es la cantidad de vehículos registrados en el correspondiente día.
-
-**Objetivo**: Crear un modelo de inteligencia artificial supervisado que permita predecir el número de unidades de vehículos que serán inscritos en el RUNT en diferentes periodos de tiempo.
 
 **¿Cómo se ve el conjunto de datos?**
 
