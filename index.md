@@ -87,6 +87,20 @@ A continuación, se presentan los resultados obtenidos al predecir el año 2017.
 
 Figura 7. Predicción del año 2017. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
 
+Para ver mejor el funcionamiento del modelo, en la figura 8 se puede observar la predicción desde una perspectiva mensual. A partir de esta, se observa que el modelo subestima los primeros 6 meses del año, y sobreestima los siguientes 6, aunque sin alejarse excesivamente de los datos originales.
+
+![image](/images/figura8.png)
+
+Figura 8. Predicción del año 2017 desde una perspectiva mensual. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
+
+**Métricas**
+
+Para evaluar la predicción del modelo, se utilizaron las siguientes métricas:
+
+- **RMSE**: el RMSE se calcula de acuerdo a la figura 9. Para esta métrica se obtuvo un valor de aproximadamente **361**, esto quiere decir que en promedio las predicciones se alejaban del dato original en 361 unidades.
+
+- **R-cuadrado**: 
+
 ## **Referencias**
 
 [1] "Qué es y cómo funciona el RUNT". Inicio - Programa Servicios de Transito. https://serviciosdetransito.com/index.php/noticias/139-que-es-y-como-funciona-el-runt (accedido el 28 de agosto de 2021).
