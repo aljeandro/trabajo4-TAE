@@ -4,7 +4,7 @@
 
 - **Alejandro Ortiz Mejía**
 
-**Nota**: Puede hacer zoom a este blog para visualizar mejor las imágenes.
+**Nota**: Puede hacer zoom a este blog para visualizar mejor las imágenes, o puede hacer clic derecho sobre cada imagen y dar clic en "abrir imagen en una nueva pestaña" para una visualización en máxima resolución.
 
 ## **Planteamiento del Problema** 
 
@@ -17,7 +17,7 @@ Una **serie de tiempo** son datos estadísticos que se recopilan, observan o reg
 
 ### **Descripción del conjunto de datos**
 
-El conjunto de datos contiene 2192 registros de la cantidad de vehículos registrados ante el RUNT diariamente, este conjunto tiene dos variables:
+El conjunto de datos contiene 2192 registros de la cantidad de vehículos registrados ante el RUNT diariamente registrados cronológicamente, este conjunto tiene dos variables:
 
 - Fecha: la fecha está en formato Día/Mes/Año, y contiene las fechas desde 1 de enero de 2012 hasta el 31 de diciembre de 2017 sin ningún dato faltante; es decir, 2192 días en total.
 
@@ -47,8 +47,12 @@ El anterior ejercicio también puede ser llevado a cabo tomando las unidades de 
 ![image](/images/figura4.png)
 Figura 4. Función de autocorrelación donde el eje x representa el número de meses de retraso (lags), y el eje *y*, el coeficiente de correlación; el pico en fucsia representa un retraso de 12 meses.
 
+## **Creación, entrenamiento y validación del modelo**
 
-## Referencias
+Para la predicción de valores futuros de una serie de tiempo existen muchos posibles modelos como, por ejemplo, la transformada rápida de Fourier, regresiones lineales, suavisado exponencial, método Theta, redes neuronales convolucionales temporales, redes neuronales recurrentes, bosques aleatorios, entre otros. Para la realización de este proyecto se probaron varios de estos modelos, y se encontró que las redes neuronales convolucionales temporales y los bosques aleatorios presentaban un relativo buen desempeño. No obstante, dado que para cada tipo de modelo puede existir diferentes hiperparámetros, es necesario, por lo menos, conocer el funcionamiento del modelo y el significado de estos, de lo contrario, el proceso de *tuning* (encontrar la mejor combinación de hiperparámetros posible) podría convertirse en una tarea a "ciegas" y, en consecuencia, ineficiente; este es mi caso, por lo cual, prioricé aquellos modelos con los cuales ya estuviera familiarizado, y que a su vez, tuviera un buen desempeño, lo que finalmente me llevó a escoger el modelo de bosques aleatorios.
+
+
+## **Referencias**
 
 [1] "Qué es y cómo funciona el RUNT". Inicio - Programa Servicios de Transito. https://serviciosdetransito.com/index.php/noticias/139-que-es-y-como-funciona-el-runt (accedido el 28 de agosto de 2021).
 
