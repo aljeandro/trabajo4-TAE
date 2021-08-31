@@ -70,7 +70,13 @@ Figura 6. Animación del proceso recursivo de predicción. Tomado de: https://ww
 
 ### Predicción del año 2017
 
+con el fin de probar y validar los ajustes del modelo, se creó una primera versión la cual se entrenó sobre los datos del periodo desde 2012 hasta el 2016, donde después de varias combinaciones de hiperparámetros, se encontró que una buena configuración es:
 
+- **lags**: de acuerdo a las conclusiones encontradas en el análisis de autocorrelación, este valor se estableció en 365 días.
+
+- **n_estimators**: Corresponde al número de árboles en el bosque, este valor se estableció en 500.
+
+- **max_deph**: Es la profundidad máxima del árbol, este valor se estableció en 30.
 
 ## **Referencias**
 
