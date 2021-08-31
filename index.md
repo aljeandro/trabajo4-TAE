@@ -101,9 +101,13 @@ Para evaluar la predicción del modelo, se utilizaron las siguientes métricas:
 
 ![image](/images/figura9.png)
 
-**Figura 9**. Fórmula para calcular la raíz del error cuadrático medio (RMSE)
+**Figura 9**. Fórmula para calcular la raíz del error cuadrático medio (RMSE).
 
-- **R-cuadrado**: 
+- **R-cuadrado**: El coeficiente de determinación (R cuadrado) se calcula de acuerdo a la figura 10. Para esta métrica se obtuvo un valor de **53 %**, esto quiere decir que el 53 % de la variabilidad en los datos es explicada por la relación entre el tiempo y las Unidades de vehículos.
+
+![image](/images/figura10.png)
+**Figura 10**. Fórmula para calcular el coeficiente de determinación (R cuadrado).
+
 
 ## **Referencias**
 
