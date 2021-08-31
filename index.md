@@ -45,9 +45,9 @@ El anterior ejercicio también puede ser llevado a cabo tomando las unidades de 
 
 
 ![image](/images/figura4.png)
-Figura 4. Función de autocorrelación donde el eje x representa el número de meses de retraso (lags), y el eje *y*, el coeficiente de correlación; el pico en fucsia representa un retraso de 12 meses.
+Figura 4. Función de autocorrelación donde el eje x representa el número de meses de retraso (lags), y el eje *y*, el coeficiente de correlación; el pico en fucsia representa el coeficiente de correlación para un retraso de 12 meses.
 
-## **Creación, entrenamiento y validación del modelo**
+## **Modelo de predicción**
 
 Para la predicción de valores futuros de una serie de tiempo existen muchos posibles modelos como, por ejemplo, la transformada rápida de Fourier, regresiones lineales, suavisado exponencial, método Theta, redes neuronales convolucionales temporales, redes neuronales recurrentes, bosques aleatorios, entre otros. Para la realización de este proyecto se probaron varios de estos modelos, y se encontró que las redes neuronales convolucionales temporales y los bosques aleatorios presentaban un relativo buen desempeño. No obstante, dado que para cada tipo de modelo puede existir diferentes hiperparámetros, es necesario, por lo menos, conocer el funcionamiento del modelo y el significado de estos, de lo contrario, el proceso de *tuning* (encontrar la mejor combinación de hiperparámetros posible) podría convertirse en una tarea a "ciegas" y, en consecuencia, ineficiente; este es mi caso, por lo cual, prioricé aquellos modelos con los cuales ya estuviera familiarizado, y que a su vez, tuviera un buen desempeño, lo que finalmente me llevó a escoger el modelo de bosques aleatorios. En conclusión, es posible que el modelo propuesto a continuación no sea el más idóneo para lograr el objetivo establecido, sin embargo, puede ser una buena aproximación.
 
@@ -68,6 +68,8 @@ Figura 5. Fórmula del proceso recursivo autorregresivo de la predicción.
 
 Figura 6. Animación del proceso recursivo de predicción. Tomado de: https://www.cienciadedatos.net/documentos/py27-forecasting-series-temporales-python-scikitlearn.html
 
+## **Resultados**
+
 ### Predicción del año 2017
 
 con el fin de probar y validar los ajustes del modelo, se creó una primera versión la cual se entrenó sobre los datos del periodo desde 2012 hasta el 2016, donde después de varias combinaciones de hiperparámetros, se encontró que una buena configuración es:
@@ -77,6 +79,11 @@ con el fin de probar y validar los ajustes del modelo, se creó una primera vers
 - **n_estimators**: Corresponde al número de árboles en el bosque, este valor se estableció en 500.
 
 - **max_deph**: Es la profundidad máxima del árbol, este valor se estableció en 30.
+
+A continuación, se presentan los resultados obtenidos al predecir el año 2017. En la figura 7 muestra en color azul la predicción hecha por el modelo, y en negro, los datos reales; visualmente, la predicción parece ser relativamente buena, sin embargo, no logra capturar completamente bien los altos picos presentados a lo largo del año, ya que aunque estos se presentaron en cierta medida el año anterior (2016), estos no fueron tan altos como los del 2017, estos picos **podrían** deberse a un fenómeno de las series de tiempo llamado **variación irregular**, este fenómeno se trata de una variación aleatoria y, por tanto, impredecible.
+
+![image](/images/figura7.png)
+Figura 7. Predicción del año 2017. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
 
 ## **Referencias**
 
