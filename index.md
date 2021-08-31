@@ -82,6 +82,7 @@ con el fin de probar y validar los ajustes del modelo, se creó una primera vers
 
 A continuación, se presentan los resultados obtenidos al predecir el año 2017. En la figura 7 muestra en color azul la predicción hecha por el modelo, y en negro, los datos reales; visualmente, la predicción parece ser relativamente buena, sin embargo, no logra capturar completamente bien los altos picos presentados a lo largo del año, ya que aunque estos se presentaron en cierta medida el año anterior (2016), estos no fueron tan altos como los del 2017, estos picos **podrían** deberse a un fenómeno de las series de tiempo llamado **variación irregular**, este fenómeno se trata de una variación aleatoria y, por tanto, impredecible.
 
+
 ![image](/images/figura7.png)
 
 Figura 7. Predicción del año 2017. En el eje x se muestra la fecha, y en el eje *y*, las unidades de vehículos. El azul es la predicción de la serie, y el negro son los valores reales. 
