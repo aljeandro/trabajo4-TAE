@@ -149,7 +149,7 @@ Al realizar una inspección visual, podemos notar que históricamente, se presen
 
 Dada la naturaleza del funcionamiento del modelo (explicada previamente), para predecir el periodo 2012 - 2016 no podemos usar directamente el mismo modelo usado para predecir el primer semestre de 2018, por ejemplo; por tanto, se procedió siguiendo los siguientes pasos:
 
-- **Paso 1**: Primero, se predice el año 2016 entrenando el modelo con los datos desde el 2012 hasta el 2015
+- **Paso 1**: Primero, se predice el año 2016 entrenando el modelo con los datos desde el 2012 hasta el 2015.
 - **Paso 2**: Se predice el año 2015 entrenando el modelo con los datos desde el 2012 hasta el 2014.
 - **Paso 3**: Se predice el año 2014 entrenando el modelo con los datos desde el 2012 hasta el 2013.
 - **Paso 4**: Bajo la premisa de que se necesitan datos del pasado para predecir el futuro, para la predicción del periodo que va desde el segundo trimestre del 2012 hasta el final del 2013, se utilizaron los datos del primer trimestre del 2012. Se tomaron 3 meses como entrenamiento debido a que cada 3 meses se presenta una relativa alta correlación (ver figura 4), y porque de ser menos tiempo (por ejemplo 27 días, por su alta autocorrelación), el modelo no sería capaz de capturar y predecir bien el comportamiento de la serie.
