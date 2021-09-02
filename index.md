@@ -6,6 +6,12 @@
 
 **Nota**: Puede hacer zoom a este blog para visualizar mejor las imágenes, o puede hacer clic derecho sobre cada imagen y dar clic en "abrir imagen en una nueva pestaña" para una visualización en máxima resolución.
 
+## **Video Promocional**
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1H9kFkc_ONg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
 ## **Planteamiento del Problema** 
 
 El RUNT significa Registro Único Nacional de Tránsito, y funciona como una gran base de datos centralizada que contiene información sobre todos los vehículos en el país [1].
