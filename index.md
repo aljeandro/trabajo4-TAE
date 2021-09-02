@@ -19,9 +19,9 @@ Predecir el número de vehículos que serán registrados en el futuro tomando co
 
 El conjunto de datos contiene 2192 registros de la cantidad de vehículos registrados ante el RUNT diariamente registrados cronológicamente, este conjunto tiene dos variables:
 
-- Fecha (variable predictora): la fecha está en formato Día/Mes/Año, y contiene las fechas desde 1 de enero de 2012 hasta el 31 de diciembre de 2017 sin ningún dato faltante; es decir, 2192 días en total.
+- **Fecha (variable predictora)**: la fecha está en formato Día/Mes/Año, y contiene las fechas desde 1 de enero de 2012 hasta el 31 de diciembre de 2017 sin ningún dato faltante; es decir, 2192 días en total.
 
-- Unidades (variable respuesta): Es la cantidad de vehículos registrados en el correspondiente día.
+- **Unidades (variable respuesta)**: Es la cantidad de vehículos registrados en el correspondiente día.
 
 Una **serie de tiempo** son datos estadísticos que se recopilan, observan o registran en intervalos de tiempo regulares (diario, semanal, semestral, anual, entre otros) [2]. A partir de esta definición podemos decir que nuestro conjunto de datos es una serie de tiempo.
 
