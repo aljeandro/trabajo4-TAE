@@ -25,6 +25,20 @@ El conjunto de datos contiene 2192 registros de la cantidad de vehículos regist
 
 - Unidades (variable respuesta): Es la cantidad de vehículos registrados en el correspondiente día.
 
+**Número de vehículos inscritos por año**
+
+- Año 2012: En el 2012 se inscribieron en total **311920** vehículos.
+
+- Año 2013: En el 2013 se inscribieron en total **295803** vehículos.
+
+- Año 2014: En el 2014 se inscribieron en total **327478** vehículos.
+
+- Año 2015: En el 2015 se inscribieron en total **284916** vehículos.
+
+- Año 2016: En el 2016 se inscribieron en total **254893** vehículos.
+
+- Año 2017: En el 2017 se inscribieron en total **239497** vehículos.
+
 **¿Cómo se ve el conjunto de datos?**
 
 En la figura 1 se puede observar el comportamiento de la variable en el tiempo. En primera instancia, se puede notar que año tras año hay muchos picos, y en partícular, hay un gran pico que se produce siempre a final de año, a este fenómeno se le conoce como *variación estacional*; es decir, se produce cuando en una serie de tiempo ocurren variaciones o movimientos que recurren año tras año en los mismos meses (o en los mismos trimestres) del año poco más o menos con la misma intensidad.
