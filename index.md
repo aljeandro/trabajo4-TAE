@@ -9,7 +9,7 @@
 ## **Video Promocional**
 
 <p align="center">
-<iframe width="600" height="355" src="https://www.youtube.com/embed/1H9kFkc_ONg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="455" src="https://www.youtube.com/embed/1H9kFkc_ONg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 ## **Planteamiento del Problema** 
