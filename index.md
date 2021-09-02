@@ -137,13 +137,13 @@ Para evaluar la predicción del modelo, se utilizaron las siguientes métricas:
 
 - **R-cuadrado**: Para esta métrica se obtuvo un valor de **49 %**.
 
-### Predicción del primer semestre de 2018
+### Predicción del 2018
 
-Para predecir el primer semestre de 2018 se entrenó un modelo con los datos desde el 2012 hasta el 2017, es decir, todo el conjunto de datos. Los hiperparámetros se establecieron de la misma manera que el modelo previo. En la figura 11 se muestra en azul la predicción y en color negro, los datos originales.
+Para predecir el 2018 se entrenó un modelo con los datos desde el 2012 hasta el 2017, es decir, todo el conjunto de datos. Los hiperparámetros se establecieron de la misma manera que el modelo previo. En la figura 11 se muestra en azul la predicción y en color negro, los datos originales.
 
 ![image](/images/figura11.png)
 
-**Figura 11**. Predicción del primer semestre del año 2018. En azul se muestra la predicción, y en negro, los datos originales.
+**Figura 11**. Predicción del año 2018. En azul se muestra la predicción, y en negro, los datos originales.
 
 Al realizar una inspección visual, podemos notar que históricamente, se presenta una leve tendencia lineal a la baja como lo muestra la figura 12, esta tendencia es correctamente capturada por el modelo, ya que la predicción (en azul) la conserva. Es importante aclarar que la línea mostrada en la figura 12 fue ajustada manual y arbitrariamente por el autor de este blog.
 
