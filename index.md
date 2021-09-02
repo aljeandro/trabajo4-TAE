@@ -96,7 +96,7 @@ con el fin de probar y validar los ajustes del modelo, se creó una primera vers
 
 - **max_deph**: Es la profundidad máxima del árbol, este valor se estableció en 30.
 
-A continuación, se presentan los resultados obtenidos al predecir el año 2017. En la figura 7 muestra en color azul la predicción hecha por el modelo, y en negro, los datos reales; visualmente, la predicción parece ser relativamente buena, sin embargo, no logra capturar completamente bien los altos picos presentados a lo largo del año, ya que aunque estos se presentaron en cierta medida el año anterior (2016), estos no fueron tan altos como los del 2017, estos picos **podrían** deberse a un fenómeno de las series de tiempo llamado **variación irregular**, este fenómeno se trata de una variación aleatoria y, por tanto, impredecible.
+A continuación, se presentan los resultados obtenidos al predecir el año 2017. En la figura 7 muestra en color azul la predicción hecha por el modelo, y en negro, los datos reales; visualmente, la predicción parece ser relativamente buena, sin embargo, no logra capturar completamente bien los altos picos presentados a lo largo del año, ya que aunque estos se presentaron en cierta medida el año anterior (2016), estos no fueron tan altos como los del 2017, estos picos **podrían** deberse a un fenómeno de las series de tiempo llamado ***variación irregular***, este fenómeno se trata de una variación aleatoria y, por tanto, impredecible.
 
 
 ![image](/images/figura7.png)
